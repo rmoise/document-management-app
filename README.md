@@ -37,7 +37,11 @@
 
 ## Objective
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uI4P19FVLTo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<a href="https://www.youtube.com/watch?v=uI4P19FVLTo">
+  <img src="https://img.youtube.com/vi/uI4P19FVLTo/0.jpg" alt="Alt text" width="700" height="400">
+</a>
+
+
 
 Build a document management app that allows users to upload, preview, download, and share documents. The app should provide a user-friendly interface for managing documents and offer features such as document preview, download tracking, and document sharing with expiration time.
 
