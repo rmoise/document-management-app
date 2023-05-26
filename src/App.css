@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+img {
+  width: 200px;
+  height: 200px;
+}
+
+.upload-form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.upload-form {
+  width: 400px;
+}

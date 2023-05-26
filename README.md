@@ -1,70 +1,122 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/rmoise/document-management-app">
+    <img src="img/logo-readme.png" alt="Logo" width="80" height="80">
+  </a>
 
-## Available Scripts
+  <h1 align="center">Document Management App - Technical Case Study</h1>
 
-In the project directory, you can run:
+  <p align="center">
+    <a href="https://github.com/rmoise/document-management-app/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/rmoise/document-management-app/issues">Request Feature</a>
+  </p>
+</div>
 
-### `npm start`
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#objective">Objective</a>
+    </li>
+    <li><a href="#context">Context</a></li>
+    <li>
+      <a href="#the-5-ws">The 5 Ws</a>
+    </li>
+    <li><a href="#user-stories">User Stories</a></li>
+    <li><a href="#technical-requirements">Technical Requirements</a></li>
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#built-with">Built With</a></li>
+  </ol>
+</details>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Objective
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Build a document management app that allows users to upload, preview, download, and share documents. The app should provide a user-friendly interface for managing documents and offer features such as document preview, download tracking, and document sharing with expiration time.
 
-### `npm test`
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Context
 
-### `npm run build`
+In today's digital age, managing documents efficiently is crucial for individuals and businesses. Traditional paper-based document management systems are being replaced by digital solutions that offer convenience, accessibility, and improved organization. The document management app aims to provide users with a seamless experience for handling documents, whether it's for personal or professional use.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## The 5 Ws
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Who?** — The document management app targets individuals, professionals, and businesses who need a digital solution to manage their documents effectively.
+- **What?** — The document management app built with React and ASP.NET Core, along with the relevant documentation.
+- **When?** — Users can use the app anytime they need to upload, preview, download, or share documents.
+- **Where?** — The app is accessible on both web and mobile platforms, supporting various devices such as desktops, tablets, and smartphones.
+- **Why?** — The document management app aims to simplify the process of managing documents, providing a centralized platform for document storage, organization, and collaboration. It offers convenience, security, and enhanced productivity for users.
 
-### `npm run eject`
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## User Stories
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- As a user, I want to be able to upload documents to the app, so I can store them securely and access them from anywhere.
+- As a user, I want to be able to preview documents within the app, so I can quickly review the content without downloading them.
+- As a user, I want to be able to download documents, so I can have a local copy on my device.
+- As a user, I want to be able to track the number of downloads for each document, so I can monitor its popularity or usage.
+- As a user, I want to be able to generate share links for documents, so I can easily share them with others.
+- As a user, I want the ability to set an expiration time for share links, so I can control the duration of document access.
+- As a user, I want to be able to delete documents, so I can remove unnecessary or outdated files.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Technical Requirements
 
-## Learn More
+- The app must be built using React or React Native to support web and mobile platforms.
+- The app should have a backend developed using ASP.NET Core, providing API endpoints for document management.
+- Document storage should be implemented using a PostgreSQL database to ensure reliable and scalable storage.
+- Azure Blob Storage should be used to store the actual document files, providing secure and cost-effective storage.
+- User authentication and authorization should be implemented using ASP.NET Core Identity for secure document access.
+- The app should implement file upload functionality, allowing users to upload documents to Azure Blob Storage.
+- Document previews should be generated on the server side using suitable libraries or components.
+- Download tracking should be implemented using the PostgreSQL database to record and display the number of document downloads.
+- Share links should be generated with unique URLs and should expire after a specified time.
+- The app should provide a user-friendly interface for managing documents, including features such as document search and sorting.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Installation
 
-### Code Splitting
+To run the Document Management API locally, follow these steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Clone the repository: `git clone https://github.com/rmoise/document-management-app.git`
+2. Navigate to the project directory: `cd document-management-app`
+3. Install the dependencies: `npm install`
+4. Set up the required environment variables for Azure Blob Storage and PostgreSQL.
+5. Start the API: `npm start`
+6. The website will be accessible at `http://localhost:3000`.
 
-### Analyzing the Bundle Size
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Features
 
-### Making a Progressive Web App
+- User authentication: Users should be able to create accounts, log in, and log out.
+- Document upload: Users should be able to upload documents to the app for storage in Azure Blob Storage.
+- Document preview: Users should be able to preview documents within the app without downloading them.
+- Document download: Users should be able to download documents to their local devices.
+- Download tracking: The app should track the number of downloads for each document and display the download count.
+- Share link generation: Users should be able to generate share links for documents to share with others.
+- Share link expiration: Share links should expire after a specified time to control document access.
+- Document deletion: Users should be able to delete documents from the app.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Advanced Configuration
+### Built With
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<!-- prettier-ignore -->
+* [![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
+* [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+* [![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-512BD4?style=for-the-badge&logo=.net&logoColor=white)](https://dotnet.microsoft.com/)
+* [![Azure Blob Storage](https://img.shields.io/badge/Azure%20Blob%20Storage-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white)](https://azure.microsoft.com/services/storage/blobs/)
+* [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
