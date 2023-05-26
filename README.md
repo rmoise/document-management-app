@@ -37,10 +37,7 @@
 
 ## Objective
 
-<a href="https://www.youtube.com/watch?v=uI4P19FVLTo">
-  <img src="https://img.youtube.com/vi/uI4P19FVLTo/0.jpg" alt="Alt text" width="700" height="400">
-</a>
-
+[![product-screenshot]](https://www.youtube.com/watch?v=uI4P19FVLTo)
 
 
 Build a document management app that allows users to upload, preview, download, and share documents. The app should provide a user-friendly interface for managing documents and offer features such as document preview, download tracking, and document sharing with expiration time.
@@ -126,3 +123,5 @@ To run the Document Management API locally, follow these steps:
 * [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+[product-screenshot]: img/document-management-app-screenshot.png
